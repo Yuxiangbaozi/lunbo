@@ -1,0 +1,97 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.wraper{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.wraper > .button{
+    position: absolute;
+    bottom: 0;
+    left:25%;
+    width: 100%
+}
+#lunbo{
+    transition: all 0.5s
+}
+.wraper > #lunbo>div{
+    height: 200px;
+    width: 200px;
+}
+.wraper >#lunbo >.red{
+    background: red;
+}
+.wraper >#lunbo >.yellow{
+    background: yellow;
+}
+.wraper >#lunbo >.blue{
+    background: blue;
+}
+.redb.active{
+    color: red;
+}
+.yellowb.active{
+    color: red;
+}
+.blueb.active{
+    color: red;
+}
+/********************无缝轮播**************************/
+.yanshi{
+    margin-bottom: 50px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 176px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.yanshi>button{
+    border: 1px solid white;
+    background: #0605464b;
+    border-radius: 50%;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    position: fixed;
+    position: absolute;
+    z-index: 2;
+}
+.yanshi>.but1{
+    top: 85%;
+    right: 22%;
+}
+.yanshi>.but2{
+    top: 85%;
+    right: 20%;
+}
+.yanshi>.but3{
+    top: 85%;
+    right: 18%;
+}
+.topbutton{
+    z-index: 1;
+}
+.yanshi>.box>img{
+    position: fixed;
+    position: absolute;
+    transition: 0.8s;
+}
+.yanshi>.box>img.cur{
+    transform: translateX(0);
+    z-index: 1;
+}
+.yanshi>.box>img.end{
+    transform: translateX(-100%);
+}
+.yanshi>.box>img.ready{
+    transform: translateX(100%);
+    z-index: -1;
+}
