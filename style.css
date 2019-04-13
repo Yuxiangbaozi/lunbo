@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
-
+/********************普通轮播**************************/
 .wraper{
     height: 200px;
     width: 200px;
@@ -64,6 +64,10 @@
     position: absolute;
     z-index: 2;
 }
+.yanshi>button:focus{
+    outline: none;
+    border: 1px solid #fc64e88a;
+}
 .yanshi>.but1{
     top: 85%;
     right: 22%;
@@ -75,9 +79,6 @@
 .yanshi>.but3{
     top: 85%;
     right: 18%;
-}
-.topbutton{
-    z-index: 1;
 }
 .yanshi>.box>img{
     position: fixed;
@@ -94,4 +95,41 @@
 .yanshi>.box>img.ready{
     transform: translateX(100%);
     z-index: -1;
+}
+/********************无缝轮播PLUS**************************/
+
+.wflbplus>.wraper{
+    width:1200px;
+    margin-bottom: 100px;
+    height: auto;
+    position: relative;
+}
+.wflbplus>.wraper>.lunbo{
+    display: flex;
+    transform: translateX(-1200px);
+    transition: all 0.5s;
+}
+.wflbplus>.wraper>.buttonwraper{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 75%;
+    right: 15%;
+}
+.wflbplus>.wraper>.buttonwraper>button{
+    border: 1px solid white;
+    background: #0605464b;
+    border-radius: 50%;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.wflbplus>.wraper>.buttonwraper>button:focus{
+    outline: none;
+    border: 1px solid #fc64e88a;
+}
+.wflbplus>.wraper>.but{
+    text-align: center;
 }
